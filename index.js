@@ -47,20 +47,20 @@ function renderGame() {
   
   cardEl.textContent = "Cards: " 
   for(let count=0; count < cards.length; count++){
-    cardEl.textContent += cards[count] + " "
+    cardEl.textContent += cards[count] + " " + "|"
   }
 
   sumEl.textContent = "sum: " + sum
 
   if (sum<=20) {
-    message = "DO you want to draw a new card?" //directly updating here doesnt work
+    message = "DO you want to draw a new card? 💵+ 20" //directly updating here doesnt work
     player.Chips += 20
   } else if (sum===21){
-    message = "You got blackjack!"
+    message = "congrats you win 💵💵!"
     hasblackjack = true
     player.Chips *= 2
   } else {
-    message = "Your lost"
+    message = "Your lost :( -100"
     isAlive = false
     player.Chips -= 100
   }
