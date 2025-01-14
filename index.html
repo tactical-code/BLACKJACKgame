@@ -3,13 +3,27 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <h1>BlackJack</h1>
-    <p id="message-el">Want to play a round?</p>
-    <p id="cards-el">Cards:</p>
-    <p id="sum-el">Sum:</p>
-    <button onclick="startGame()">START GAME</button>
-    <button onclick="newCard()">NEW CARD</button>
-    <p id="player-el">user: $145</p>
+    <div class="bd">
+      <h1>BlackJack</h1>
+      <p id="message-el">Want to play a round?</p>
+      <p id="cards-el">Cards:</p>
+      <p id="sum-el">Sum:</p>
+      <button onclick="startGame()">START GAME</button>
+      <button onclick="newCard()">NEW CARD</button>
+      <p id="player-el">user: $145</p>
+
+    </div>
+    <p class="guide"><u>GUIDE</u></p>
+    <div class="rules-css"><ul>
+      <li>Click on start game</li>
+      <li>Two numbers will br drawn 🎲</li>
+      <li>if the sum of those number is greater than 21, you will loss the game </li>
+      <li>If the sum is smaller than 21 you get $20 💵</li>
+      <li>If sum == 21 you get double the about you currently have 💵💵</li>
+      <li>lossing the game cost you $100 🚫</li>
+      <li>When amount become negative means you are in debt</li>
+      <li>Refresh to start new game</li>
+    </ul></div>
     <script src="index.js"></script>
   </body>
 </html>
