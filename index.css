@@ -1,11 +1,12 @@
-body {
+body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
   background-image: url("table.png");
   background-size: cover;
+}
+.bd {
   font-weight: bold;
   color: white;
   text-align: center;
-  font-size: 40px;
   margin: 0;
   padding: 0;
 }
@@ -22,6 +23,18 @@ h1 {
 
 #message-el {
   font-style: italic;
+}
+.rules-css{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.guide{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
 button {
