@@ -58,7 +58,12 @@ function renderGame() {
   } else if (sum===21){
     message = "congrats you win 💵💵!"
     hasblackjack = true
-    player.Chips *= 2
+    if(player.Chips > 0){
+      player.Chips *= 2
+    }
+    else{
+      player.Chips /= 2
+    }
   } else {
     message = "Your lost :( -100"
     isAlive = false
